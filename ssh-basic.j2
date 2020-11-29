@@ -1,0 +1,16 @@
+configure terminal
+hostname {{ihost}}
+ip domain name {{idomain}}
+crypto key generate rsa
+1024
+interface {{iface}}
+ip address {{iaddress}} {{isubnet}}
+no shut
+exit
+ip ssh version 2
+line vty 0 15
+transport input ssh
+login local
+password {{ienpass}}
+exit
+username admin priv 15 password {{ipassword}}
