@@ -1,2 +1,2 @@
 # Automation
-Contains scripts for network automation via python NetMiko
+Contains scripts for network automation
